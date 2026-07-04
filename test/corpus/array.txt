@@ -1,0 +1,13 @@
+======
+ARRAY
+======
+
+[{}, [], 1, "foo", true, false, null]
+
+---
+
+(source_file
+  (array
+    (object) (array) (number) (string) (true) (false) (null)
+  )
+)

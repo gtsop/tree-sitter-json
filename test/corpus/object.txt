@@ -1,0 +1,27 @@
+======
+OBJECT
+======
+
+{
+  "a": {},
+  "b": [],
+  "c": 1,
+  "d": "foo",
+  "e": true,
+  "f": false,
+  "g": null
+}
+
+---
+
+(source_file
+  (object
+    (member (member_name) (member_value (object)))
+    (member (member_name) (member_value (array)))
+    (member (member_name) (member_value (number)))
+    (member (member_name) (member_value (string)))
+    (member (member_name) (member_value (true)))
+    (member (member_name) (member_value (false)))
+    (member (member_name) (member_value (null)))
+  )
+)

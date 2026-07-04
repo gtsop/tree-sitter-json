@@ -1,0 +1,341 @@
+========
+ADVANCED
+========
+
+{
+  "emptyObject": {},
+  "emptyArray": [],
+  "emptyString": "",
+  "basicTypes": {
+    "null": null,
+    "true": true,
+    "false": false
+  },
+  "numbers": {
+    "zero": 0,
+    "negativeZero": -0,
+    "integer": 123,
+    "negativeInteger": -123,
+    "decimal": 123.456,
+    "negativeDecimal": -123.456,
+    "fractionOnlyWithLeadingZero": 0.123,
+    "exponentLower": 1e10,
+    "exponentUpper": 1E10,
+    "exponentPositive": 1e+10,
+    "exponentNegative": 1e-10,
+    "decimalExponent": -123.456E+789,
+    "bigInteger": 123456789012345678901234567890
+  },
+  "strings": {
+    "space": " ",
+    "punctuation": "!@#$%^&*()_+-=[]{}|;:',.<>/?",
+    "escapedQuote": "\"",
+    "escapedBackslash": "\\",
+    "escapedSlash": "\/",
+    "escapedBackspace": "\b",
+    "escapedFormFeed": "\f",
+    "escapedNewline": "\n",
+    "escapedCarriageReturn": "\r",
+    "escapedTab": "\t",
+    "unicodeEscapeLower": "\u03c0",
+    "unicodeEscapeUpper": "\u03C0",
+    "unicodeNull": "\u0000",
+    "unicodeControlEscape": "\u001F",
+    "surrogatePair": "\uD83D\uDE00",
+    "mixedEscapes": "quote=\" backslash=\\ slash=\/ newline=\n tab=\t pi=\u03C0 emoji=\uD83D\uDE00",
+    "rawUnicode": "π 😀 日本 العربية עברית हिन्दी русский"
+  },
+  "keys": {
+    "": "empty key",
+    " ": "space key",
+    "\"": "escaped quote key",
+    "\\": "escaped backslash key",
+    "\u03C0": "unicode escape key",
+    "π": "raw unicode key"
+  },
+  "nested": {
+    "object": {
+      "array": [
+        {
+          "value": [
+            true,
+            false,
+            null,
+            {
+              "deep": "done"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "arrays": [
+    [],
+    [null],
+    [true, false],
+    [0, -0, 1, -1, 1.0, 0.0, 1e0, 1E-0],
+    ["", "text", "\\", "\u0041"],
+    [{}, {"a": []}]
+  ],
+  "whitespaceSensitiveButValid": {
+    "afterColon": true,
+    "afterComma": false
+  }
+}
+
+---
+
+(source_file
+    (object
+      (member
+        (member_name)
+        (member_value
+          (object)))
+      (member
+        (member_name)
+        (member_value
+          (array)))
+      (member
+        (member_name)
+        (member_value
+          (string)))
+      (member
+        (member_name)
+        (member_value
+          (object
+            (member
+              (member_name)
+              (member_value
+                (null)))
+            (member
+              (member_name)
+              (member_value
+                (true)))
+            (member
+              (member_name)
+              (member_value
+                (false))))))
+      (member
+        (member_name)
+        (member_value
+          (object
+            (member
+              (member_name)
+              (member_value
+                (number)))
+            (member
+              (member_name)
+              (member_value
+                (number)))
+            (member
+              (member_name)
+              (member_value
+                (number)))
+            (member
+              (member_name)
+              (member_value
+                (number)))
+            (member
+              (member_name)
+              (member_value
+                (number)))
+            (member
+              (member_name)
+              (member_value
+                (number)))
+            (member
+              (member_name)
+              (member_value
+                (number)))
+            (member
+              (member_name)
+              (member_value
+                (number)))
+            (member
+              (member_name)
+              (member_value
+                (number)))
+            (member
+              (member_name)
+              (member_value
+                (number)))
+            (member
+              (member_name)
+              (member_value
+                (number)))
+            (member
+              (member_name)
+              (member_value
+                (number)))
+            (member
+              (member_name)
+              (member_value
+                (number))))))
+      (member
+        (member_name)
+        (member_value
+          (object
+            (member
+              (member_name)
+              (member_value
+                (string)))
+            (member
+              (member_name)
+              (member_value
+                (string)))
+            (member
+              (member_name)
+              (member_value
+                (string)))
+            (member
+              (member_name)
+              (member_value
+                (string)))
+            (member
+              (member_name)
+              (member_value
+                (string)))
+            (member
+              (member_name)
+              (member_value
+                (string)))
+            (member
+              (member_name)
+              (member_value
+                (string)))
+            (member
+              (member_name)
+              (member_value
+                (string)))
+            (member
+              (member_name)
+              (member_value
+                (string)))
+            (member
+              (member_name)
+              (member_value
+                (string)))
+            (member
+              (member_name)
+              (member_value
+                (string)))
+            (member
+              (member_name)
+              (member_value
+                (string)))
+            (member
+              (member_name)
+              (member_value
+                (string)))
+            (member
+              (member_name)
+              (member_value
+                (string)))
+            (member
+              (member_name)
+              (member_value
+                (string)))
+            (member
+              (member_name)
+              (member_value
+                (string)))
+            (member
+              (member_name)
+              (member_value
+                (string))))))
+      (member
+        (member_name)
+        (member_value
+          (object
+            (member
+              (member_name)
+              (member_value
+                (string)))
+            (member
+              (member_name)
+              (member_value
+                (string)))
+            (member
+              (member_name)
+              (member_value
+                (string)))
+            (member
+              (member_name)
+              (member_value
+                (string)))
+            (member
+              (member_name)
+              (member_value
+                (string)))
+            (member
+              (member_name)
+              (member_value
+                (string))))))
+      (member
+        (member_name)
+        (member_value
+          (object
+            (member
+              (member_name)
+              (member_value
+                (object
+                  (member
+                    (member_name)
+                    (member_value
+                      (array
+                        (object
+                          (member
+                            (member_name)
+                            (member_value
+                              (array
+                                (true)
+                                (false)
+                                (null)
+                                (object
+                                  (member
+                                    (member_name)
+                                    (member_value
+                                      (string)))))))))))))))))
+      (member
+        (member_name)
+        (member_value
+          (array
+            (array)
+            (array
+              (null))
+            (array
+              (true)
+              (false))
+            (array
+              (number)
+              (number)
+              (number)
+              (number)
+              (number)
+              (number)
+              (number)
+              (number))
+            (array
+              (string)
+              (string)
+              (string)
+              (string))
+            (array
+              (object)
+              (object
+                (member
+                  (member_name)
+                  (member_value
+                    (array))))))))
+      (member
+        (member_name)
+        (member_value
+          (object
+            (member
+              (member_name)
+              (member_value
+                (true)))
+            (member
+              (member_name)
+              (member_value
+                (false))))))))
